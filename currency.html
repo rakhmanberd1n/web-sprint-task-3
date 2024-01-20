@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <link rel = "stylesheet" href="style.css" type ="text/css">
+</head>
+
+<body>
+    <div class = "first-line">
+        <div class = "first-line-currency-title">
+            <p>Введите сумму:</p>
+            <p class = "first-line-kzt"><b>KZT (tenge)</b></p>
+            <p class = "first-line-usd"><b>USD (dollar)</b></p>
+            <p class = "first-line-eur"><b>EUR (euro)</b></p>
+        </div>
+
+        <div class = "second-line">
+            <input type = "number" class = "sum">
+            <select class = "currency">
+                <option selected>KZT</option>
+                <option>USD</option>
+                <option>EUR</option>
+            </select>
+            <input class = "kzt" disabled>
+            <input class = "usd" disabled>
+            <input class = "eur" disabled>
+        </div>
+    </div>
+
+    <script>
+        let sum = document.querySelector(".sum")
+        let kzt = document.querySelector(".kzt")
+        let usd = document.querySelector(".usd")
+        let eur = document.querySelector(".eur")
+        let currency = document.querySelector(".currency")
+
+        sum.addEventListener('input', calc)
+        
+        function calc() {
+            switch (currency.value) {
+                case "KZT":
+                    kzt.value = "-"
+                    usd.value = (sum.value / 431).toFixed(2)
+                    eur.value = (sum.value / 509).toFixed(2)
+                break;
+                case "USD":
+                    kzt.value = (sum.value * 429).toFixed(2)
+                    usd.value = "-"
+                    eur.value = ((sum.value * 429) / 509).toFixed(2)
+                break;
+                case "EUR":
+                    kzt.value = (sum.value * 507).toFixed(2)
+                    usd.value = ((sum.value * 507) / 431).toFixed(2)
+                    eur.value = "-"
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.first-line-currency-title {
+    display: flex; 
+    margin-bottom: -10px;
+}
+
+.first-line-kzt {
+    margin-left: 147px;
+}
+
+.first-line-usd {
+    margin-left: 105px;
+}
+
+.first-line-eur {
+    margin-left: 100px;
+}
+
+.sum {
+    padding-left: 10px; 
+    margin-right: 5px; 
+    height: 25px; 
+    border-color: #c8cdd3; 
+    border-style: solid; 
+    border-width: 0.01px;
+}
+
+.currency {
+    margin-right: 10px; 
+    height: 29px; 
+    width: 55px; 
+    font-size: 11px; 
+    text-align: center; 
+    border-color: #c8cdd3; 
+    border-style: solid; 
+    border-width: 0.01px;
+}
+
+.kzt {
+    margin-right: 10px; 
+    padding-left: 10px; 
+    height: 25px; 
+    color:black; 
+    background-color: #d4dbe3; 
+    border-color: #c8cdd3; 
+    border-style: solid; 
+    border-width: 0.01px;
+}
+
+.usd {
+    margin-right: 10px; 
+    padding-left: 10px; 
+    height: 25px; 
+    color:black; 
+    background-color: #d4dbe3; 
+    border-color: #c8cdd3; 
+    border-style: solid; 
+    border-width: 0.01px;
+}
+
+.eur {
+    margin-right: 10px; 
+    padding-left: 10px; 
+    height: 25px; 
+    color:black; 
+    background-color: #d4dbe3; 
+    border-color: #c8cdd3; 
+    border-style: solid; 
+    border-width: 0.01px;
+}
